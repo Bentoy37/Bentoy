@@ -1,0 +1,81 @@
+<html>
+	<head>
+		<title> PT4-1_Gonzales,Ven </title>
+		<style>
+			*	{
+				box-sizing: border-box;
+				padding: 0;
+				margin: 0;
+			}
+			.navigation_bar    {
+                display: flex;
+                flex-direction: row;
+                position: fixed;
+                height: 60;
+                width: 100%;
+                overflow-x: hidden;
+                padding-top: 15px;
+                background: #2C3E50;
+			}
+			.navigation_bar> a	{
+				font-family: 'Roboto', sans-serif;
+				text-decoration: none;
+				color: white;
+				padding-left: 15px;
+				font-size: x-large;
+			}
+			.gridcontainer	{
+                display: grid;
+                grid-template-columns: 0.3fr 2fr;
+                grid-template-rows: 1fr 2fr 2fr 2fr 2fr 2fr 1fr;
+                width: 100vw;
+                height: 100vh;
+                grid-template-areas:
+                "header header"
+                "sidebar content"
+                "sidebar content"
+                "sidebar content"
+                "sidebar content"
+                "sidebar content"
+                "sidebar content";
+			}
+			.sidebar	{
+                grid-area: sidebar;
+			} 
+            .header	{
+                grid-area: header;
+			}
+            .content	{
+				padding: 15% 0;
+				font-family: Goblin One;
+				text-align: center;
+				font-size: 30px;
+				color: White;
+				height: 100%;
+				background-color :#466885;
+                grid-area: content;
+                overflow-y: scroll;
+			} 
+		</style>
+	</head>
+	<body>
+		<div class="grid_container">
+			<div class="header">
+				<div class="navigation_bar">
+					<a href="Index.html">About me</a>
+					<a href="">My Hobbies</a>
+					<a href="Fav game.html">My favorite games</a>
+					<a href="Fav food.html">My favorite food</a>
+				</div>
+			</div>
+			<div class="sidebar"></div>
+			<div class="content">
+				<h1>  </h1>
+				<p>My favorite hobbies</p>
+				<p>My favorite hobbies is to spend time with my family and friends</p>
+				<br>
+				<img src = "Pamilya.jpg">
+			</div>
+		</div>
+	</body>
+</html>
